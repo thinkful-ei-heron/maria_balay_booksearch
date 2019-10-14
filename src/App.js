@@ -11,12 +11,9 @@ const USCurrencyFormat = new Intl.NumberFormat('en-US', {
 });
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
+  state = {
       books: []
     }
-  }
 
   searchBooks = (searchTerm) => {
     fetch(`https://www.googleapis.com/books/v1/volumes?q=${searchTerm}&filter=ebooks`)

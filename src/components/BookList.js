@@ -9,7 +9,7 @@ class BookList extends React.Component {
             <img src={item.volumeInfo.imageLinks.smallThumbnail} alt="book-thumbnail" />
             <ul>
                 <li className="book-title">{item.volumeInfo.title}</li>
-                <li>{item.volumeInfo.authors.join(' ')}</li>
+                <li>{(item.volumeInfo.authors) ? item.volumeInfo.authors.join(' ') : ''}</li>
                 <li>
                     {(item.saleInfo.saleability === 'FOR_SALE') ? this.props.currency.format(item.saleInfo.retailPrice.amount) : 'Free'}
                 </li>
