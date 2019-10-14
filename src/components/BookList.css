@@ -2,6 +2,11 @@
  display: flex;
  justify-content: center;
  flex-direction: row;
+ border-bottom: 1px solid grey;
+}
+
+img {
+    object-fit: contain;
 }
 
 .book-list-container ul {
@@ -9,8 +14,4 @@
 
 }
 
-.book-list-container ul li {
-    
 
-
-}
