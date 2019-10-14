@@ -1,6 +1,6 @@
 .book-list-container {
  display: flex;
- justify-content: center;
+ /* justify-content: center; */
  flex-direction: row;
  border-bottom: 1px solid grey;
 }
