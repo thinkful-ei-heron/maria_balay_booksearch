@@ -3,17 +3,21 @@ import './BookList.css'
 
 class BookList extends React.Component {
     render() {
-        return (
+        const books = this.props.books.map((item, index) => {
+           return (
             <div className="book-list-container">
-                <img src="#" alt="book-thumbnail"/> 
-                <ul>
-                    <li className="book-title">Title</li>
-                    <li>Author</li>
-                    <li>Price</li>
-                    <li>description</li>
-                </ul>
+            <img src={item.volumeInfo.imageLinks.thumbnail} alt="book-thumbnail" />
+            <ul>
+                <li key={index} className="book-title">{item.volumeInfo.title}</li>
+                <li key={index}>{item.volumeInfo.authors[0]}</li>
+                <li key={index}>price</li>
+                <li key={index}>{item.volumeInfo.description}</li>
+            </ul>
             </div>
-            
+            )
+        })
+        return (
+            books 
         )
     }
 }
