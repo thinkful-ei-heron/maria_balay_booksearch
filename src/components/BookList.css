@@ -1,0 +1,16 @@
+.book-list-container {
+ display: flex;
+ justify-content: center;
+ flex-direction: row;
+}
+
+.book-list-container ul {
+    list-style-type: none;
+
+}
+
+.book-list-container ul li {
+    
+
+
+}

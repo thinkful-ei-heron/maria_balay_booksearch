@@ -14,3 +14,7 @@
 .book-filter select {
     font-size: 15px;
 }
+
+.book-title {
+    font-weight: bold;
+}
