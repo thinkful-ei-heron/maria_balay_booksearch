@@ -1,0 +1,16 @@
+.book-filter {
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    background-color: lightgrey;
+    font-size: 18px;
+}
+
+.book-filter label {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.book-filter select {
+    font-size: 15px;
+}
